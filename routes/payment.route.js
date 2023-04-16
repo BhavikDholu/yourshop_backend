@@ -34,7 +34,7 @@ paymentRouter.post("/paymentverification/:id", async (req, res) => {
           await CartModel.deleteMany({userID})
     }
     res.redirect(
-      `http://localhost:3000/paymentsuccess`
+      `https://yourshop-hazel.vercel.app/paymentsuccess`
     );
   } catch (error) {
     res.send("somthing went wrong");
